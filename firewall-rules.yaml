@@ -1,0 +1,17 @@
+allow-http-https:
+  sourceRanges: 0.0.0.0/0
+  allowed:
+    - IPProtocol: tcp
+      ports: [80, 443]
+
+allow-ssh-local:
+  sourceRanges: 203.0.113.5/32, 203.0.113.0/24, 192.168.1.1/32, 192.168.1.0/24
+  allowed:
+    - IPProtocol: tcp
+      ports: [22]
+
+deny-ssh-public:
+  sourceRanges: 0.0.0.0/0
+  denied:
+    - IPProtocol: tcp
+      ports: [22]
