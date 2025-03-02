@@ -5,7 +5,6 @@ This repository contains the deployment scripts and configurations for the GCP a
 ## Files
 - `deploy.sh`: Script to create the instance template and managed instance group (MIG).
 - `firewall-rules.yaml`: Configuration for firewall rules.
-- `iam-roles.json`: Configuration for IAM roles.
 
 ## Steps to Deploy
 1. Run the `deploy.sh` script to create the instance template and MIG.
